@@ -1,0 +1,241 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s;
+}
+
+.modal-content {
+    background: rgb(15, 15, 15);
+    padding: 2rem;
+    border-radius: 8px;
+    animation: slideIn 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid #f200b2;
+    box-shadow: 0px 0px 15px #f200b2;
+    overflow: hidden;
+}
+
+.modal-content img {
+    height: 250px;
+    width: 450px;
+}
+
+.modal-content h4 {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-weight: 100;
+}
+
+.modal-content h5 {
+    color: white;
+    font-size: 3.5rem;
+    padding: 10px;
+    font-weight: 100;
+}
+
+.modal-content button{
+    border-radius: 12px;
+    background-color: #f200b2;
+    color: white;
+    border: none;
+    width: 120px;
+    height: 60px;
+    font-size: 1.3rem;
+    font-weight: 100;
+    cursor: pointer;
+    margin: 1rem;
+    transition: all 0.2s ease-in;
+&:hover{
+    opacity: 0.8;
+}}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+.modal-overlay.fade-out {
+    animation: fadeOut 0.3s forwards;
+}
+
+.modal-content.slide-out {
+    animation: slideOut 0.3s forwards;
+}
+
+.modal_inside {
+    display: flex;
+    align-items: center;
+}
+
+.modal_inside img {
+    height: 48px !important;
+    width: 48px !important;
+}
+
+@media (max-width: 1200px) {
+    .modal-content h4 {
+        font-size: 1.8rem;
+    }
+
+    .modal-content h5 {
+        font-size: 3rem;
+    }
+
+    .modal-content img {
+        height: 220px;
+        width: 220px;
+    }
+
+    .modal-content button {
+        width: 100px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .modal-content {
+        padding: 1.5rem;
+    }
+
+    .modal-content h4 {
+        font-size: 1.6rem;
+    }
+
+    .modal-content h5 {
+        font-size: 2.5rem;
+    }
+
+    .modal-content img {
+        height: 200px;
+        width: 250px;
+    }
+
+    .modal-content button {
+        width: 90px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 1rem;
+    }
+
+    .modal-content h4 {
+        font-size: 1.4rem;
+    }
+
+    .modal-content h5 {
+        font-size: 2rem;
+    }
+
+    .modal-content img {
+        height: 180px;
+        width: 320px;
+    }
+
+    .modal-content button {
+        width: 80px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-content {
+        padding: 0.8rem;
+    }
+
+    .modal-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content h5 {
+        font-size: 1.8rem;
+    }
+
+    .modal-content img {
+        height: 150px;
+        width: 280px;
+    }
+
+    .modal-content button {
+        width: 70px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .modal-content {
+        padding: 0.5rem;
+    }
+
+    .modal-content h4 {
+        font-size: 1rem;
+    }
+
+    .modal-content h5 {
+        font-size: 1.5rem;
+    }
+
+    .modal-content img {
+        height: 120px;
+        width: 240px;
+    }
+
+    .modal-content button {
+        width: 60px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}

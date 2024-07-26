@@ -1,0 +1,317 @@
+.body2 {
+    height: 100vh;
+    max-height: 100vh;
+    background: linear-gradient(black, rgb(90, 12, 90));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+}
+
+
+.bottom_links {
+    position: absolute;
+    top: 90%;
+}
+
+.bottom_links a {
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+&:hover{
+    opacity: 0.8;
+}}
+
+.bottom_links img {
+    height: 40px;
+    width: 40px;
+}
+
+.body2 h2{
+    color: white;
+    font-size: 2.2rem;
+}
+
+.body2 div{
+    gap: 1.5rem;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.wallet{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 12px 12px #f200b2;
+    border-radius: 12px;
+    position: relative;
+}
+
+.wallet h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.wallet button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+&:hover{
+    opacity: 0.5;
+}}
+
+.copied-message {
+    color: rgb(135, 236, 95);
+    font-size: 1.5rem;
+    position: absolute;
+    top:  0%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+}
+
+.body2_div {
+    display: flex;
+    align-items: center;
+}
+
+.body2_div span{
+    color: #f200b2;
+}
+
+.body2_div img{
+    height: 80px;
+    width: 80px;
+}
+
+.butbuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howtobut {
+    width: 250px;
+    height: 60px;
+    font-size: 1.2rem;
+    background-color: #f200b2;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.2s ease-in;
+    border: none;
+    box-shadow: 0px 0px 15px black;
+&:hover{
+    box-shadow: 0px 0px 15px #f200b2;
+    transform: scale(1.05);
+}}
+
+.butbutton {
+    width: 350px;
+    height: 65px;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, #f200b2, #d8df7f, #962cdd);
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 0px 15px black;
+    animation: glowing 1s infinite;
+&:hover{
+    box-shadow: 0px 0px 15px #f200b2;
+    transform: scale(1.05);
+}}
+
+@keyframes glowing {
+    0%, 100% {
+        box-shadow: 0 0 15px black;
+    }
+    50% {
+        box-shadow: 0 0 15px #f200b2;
+    }
+}
+
+.singlebutton_main {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 60px;
+    width: 250px;
+    background-color: #ffffff;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0px 0px 12px #f200b2;
+    color: #551a8b;
+    border-radius: 20px; 
+    animation: glowing 1s infinite;
+&:hover{
+    animation: rotate 0.7s ease-in-out both;
+}}
+
+.singlebutton{
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 60px;
+    width: 250px;
+    background-color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0px 0px 12px #f200b2;
+    color: #551a8b;
+    border-radius: 20px;
+}
+
+.singlebutton:hover {
+    animation: rotate 0.7s ease-in-out both;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0)
+    }
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0)
+    }
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0)
+    }
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0)
+    }
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0)
+    }
+}
+
+@keyframes storm {
+    0% {
+        transform: translate3d( 0, 0, 0) translateZ(0)
+    }
+    25% {
+        transform: translate3d( 4px, 0, 0) translateZ(0)
+    }
+    50% {
+        transform: translate3d( -3px, 0, 0) translateZ(0)
+    }
+    75% {
+        transform: translate3d( 2px, 0, 0) translateZ(0)
+    }
+    100% {
+        transform: translate3d( 0, 0, 0) translateZ(0)
+    }
+}
+
+.allbuttons {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .body2 {
+        gap: 2rem;
+    }
+
+    .body2 h2 {
+        font-size: 2rem;
+    }
+
+    .wallet h1 {
+        font-size: 1.5rem;
+    }
+
+    .howtobut, .butbutton, .singlebutton {
+        width: 180px;
+    }
+
+    .allbuttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .body2 {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .body2 h2 {
+        font-size: 1.8rem;
+    }
+
+    .wallet h1 {
+        font-size: 0.7rem;
+    }
+
+    .howtobut, .butbutton, .singlebutton {
+        width: 160px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .wallet img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .bottom_links img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .body2 h2 {
+        font-size: 1.1rem;
+    }
+
+    .wallet h1 {
+        font-size: 0.7rem;
+    }
+
+    .body2 div{
+        gap: 1rem;
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .howtobut, .butbutton, .singlebutton {
+        width: 80px;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+
+    .bottom_links .img{
+        height: 15px !important;
+    }
+
+    .bottom_links img {
+        height: 25px;
+        width: 25px;
+    }
+}

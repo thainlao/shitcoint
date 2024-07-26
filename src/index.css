@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Anton", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+  background: #040612;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #f200b2;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+html, body{
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #f200b2;
+  color: black;
+}

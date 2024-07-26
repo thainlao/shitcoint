@@ -1,0 +1,186 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s;
+    overflow: hidden;
+}
+
+.how_modal-content {
+    background: rgb(15, 15, 15);
+    padding: 2rem;
+    border-radius: 8px;
+    animation: slideIn 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid #f20000;
+    box-shadow: 0px 0px 35px #f20000;
+    overflow: hidden;
+}
+
+.how_modal-content h3{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 100;
+}
+
+.how_modal-content h4{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.how_modal-content span{
+    color: #f200b2;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.how_modal-content img {
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.how_modal-content button{
+    height: 50px;
+    width: 100px;
+    background-color: #e43939;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.2s ease-in;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+&:hover{
+    opacity: 0.8;
+}}
+
+@media (max-width: 1200px) {
+    .how_modal-content h3, .how_modal-content h4 {
+        font-size: 1.5rem;
+    }
+
+    .how_modal-content span {
+        font-size: 1.8rem;
+    }
+
+    .how_modal-content img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .how_modal-content button {
+        height: 45px;
+        width: 90px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .how_modal-content {
+        padding: 1.5rem;
+    }
+
+    .how_modal-content h3, .how_modal-content h4 {
+        font-size: 1.3rem;
+    }
+
+    .how_modal-content span {
+        font-size: 1.6rem;
+    }
+
+    .how_modal-content img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .how_modal-content button {
+        height: 40px;
+        width: 80px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .how_modal-content {
+        padding: 1rem;
+    }
+
+    .how_modal-content h3, .how_modal-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .how_modal-content span {
+        font-size: 1.4rem;
+    }
+
+    .how_modal-content img {
+        height: 180px;
+        width: 180px;
+    }
+
+    .how_modal-content button {
+        height: 35px;
+        width: 70px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .how_modal-content {
+        padding: 0.5rem;
+    }
+
+    .how_modal-content h3, .how_modal-content h4 {
+        font-size: 1rem;
+    }
+
+    .how_modal-content span {
+        font-size: 1.2rem;
+    }
+
+    .how_modal-content img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .how_modal-content button {
+        height: 30px;
+        width: 60px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .how_modal-content {
+        padding: 0.5rem;
+    }
+
+    .how_modal-content h3, .how_modal-content h4 {
+        font-size: 0.9rem;
+    }
+
+    .how_modal-content span {
+        font-size: 1rem;
+    }
+
+    .how_modal-content img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .how_modal-content button {
+        height: 25px;
+        width: 50px;
+        font-size: 0.7rem;
+    }
+}
